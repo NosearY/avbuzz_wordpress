@@ -1,0 +1,248 @@
+/*
+Theme Name: AV Buzz
+Theme URI: 
+Author: Reason Yuan
+Author URI: 
+Description: Designed for avbuzz.com
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Reset
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigations
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Header
+ * 11.0 - Widgets
+ * 12.0 - Content
+ *    12.1 - Posts and pages
+ *    12.2 - Post Formats
+ *    12.3 - Comments
+ * 13.0 - Footer
+ * 14.0 - Media
+ *    14.1 - Captions
+ *    14.2 - Galleries
+ * 15.0 - Multisite
+ * 16.0 - Media Queries
+ *    16.1 - Mobile Large
+ *    16.2 - Tablet Small
+ *    16.3 - Tablet Large
+ *    16.4 - Desktop Small
+ *    16.5 - Desktop Medium
+ *    16.6 - Desktop Large
+ *    16.7 - Desktop X-Large
+ * 17.0 - Print
+ */
+
+
+/**
+ * 1.0 - Reset
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+ * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
+ */
+
+ @import
+ url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+body {
+	background-color: #D4D9FF;
+}
+
+.article-main-content{
+	background: url(images/background_Logo.jpg);
+	background-repeat:repeat;
+	min-height: 1024px;
+}
+
+#main_nav {
+	text-align:center;
+	background-color: #9BABFF;
+}
+
+#main_nav ul{
+	margin: auto;
+	
+}
+
+#main_nav li{
+	width: auto;
+	height: 100%;
+}
+
+.article-separator{
+	text-align: center;
+	margin: 30px auto 30px auto;
+}
+
+.img-box{
+	margin:10px 7px 5px 7px;
+	width: 23%;
+	height: 17%;
+/*	border-style: solid;*/
+	text-align: center;
+	float: left;
+	display:block;
+}
+
+.article-img{
+	width: 150px;
+	height: 105px;
+}
+
+.article-img img{
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.wp-pagenavi{
+	text-align: right;
+}
+
+.article-title{
+	margin: 2px 0 3px 0;
+	text-align: center;
+	height: 10%;
+	width: 100%;
+	clear:both;
+	line-height: 14px;
+}
+
+.article-title-font{
+	font-size: 12px;
+	color:#6c6c6c;
+}
+
+.article-footer{
+	margin-bottom: 10px;
+}
+
+.ad-top{
+	margin-top: 1px;
+}
+
+.ad-top img{
+	height: 100%;
+	width: 13.9%;
+}
+
+.ad-right img{
+	width:100%;
+	height:100%;
+	margin-bottom: 10px;
+}
+
+.main-content-up{
+	margin-left: auto;
+	margin-right: auto;
+	height: 350px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.main-content-up td{
+	border:1px solid;
+}
+
+
+.main-content-middle{
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+	width: 100%;
+	margin-bottom: 10px;
+	border:1px #92ABC9 solid;
+	/*border-style: solid;*/
+	text-align: center;
+	background-color: #E2E6FF;
+}
+
+.main-content-container{
+	margin-top: 10px;
+}
+
+.main-content-middle-articles{
+	margin: 0px auto 0px auto;
+	height:950px;
+	width:100%;
+}
+
+.articles{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.style-center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.avbuzz_navbar{
+	height:25px;
+	background: url(images/av_buzz_bg.jpg);
+	margin-top:0px;
+	width: 100%;
+}
+
+.avbuzz-navbar-bottom{
+	height:25px;
+	background: url(images/av_buzz_bg.jpg);
+	margin-bottom:0px;
+	width: 100%;
+}
+
+.avbuzz_navbar img{
+	float:left;
+	margin-left:0px;	
+}
+
+
+ /*html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+ }
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+ 	display: block;
+ }
+ body {
+ 	line-height: 1;
+ 	background-color: #D4D9FF;
+ }
+ ol, ul {
+ 	list-style: none;
+ }
+ blockquote, q {
+ 	quotes: none;
+ }
+ blockquote:before, blockquote:after, q:before, q:after {
+ 	content: '';
+ 	content: none;
+ }
+ table {
+ 	border-collapse: collapse;
+ 	border-spacing: 0;
+ }*/

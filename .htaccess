@@ -1,0 +1,20 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /wordpress/
+#Rewriting URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^20[0-9][0-9]/[0-9][0-9]/[0-9][0-9]/.*/([0-9A-Za-z_]+)/([0-9A-Za-z_-]+\.[0-9A-Za-z_]+)$ /wordpress/wp-content/uploads/$1/$2 [NC,L]
+#
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^imghahaha$ /wordpress/wp-content/uploads/maxresdefault.jpg [NC,L]
+RewriteRule . /wordpress/index.php [L]
+#RewriteRule ^img/([0-9A-Za-z_]+)/([0-9A-Za-z_]+\.[0-9A-Za-z_]+)$ wp-content/uploads/$1/$2 [NC,L]
+
+</IfModule>
+
+# END WordPress
